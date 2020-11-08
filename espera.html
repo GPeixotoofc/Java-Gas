@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Login Vendedor</title>
+  <link rel="shortcut icon" href="./img/logo2.png" type="image/x-icon">
+  <link
+    href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="css/cadastrologin2.css" rel="stylesheet">
+  <link href="css/cadastrologin.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-primary">
+
+  <div class="container">
+
+    <div class="row justify-content-center">
+
+      <div class="col-xl-10 col-lg-12 col-md-9">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+          <div class="card-body p-0">
+            <div class="row">
+              <div class="col-lg-6 d-none d-lg-block bg-login-image">
+
+              </div>
+              <div class="col-lg-6">
+                <div class="p-5">
+                  <div class="text-center">
+                    <img src="img/logo12.svg" alt="Logo Natural Foods">
+                    <hr>
+                    <h1 class="h4 text-gray-900 mb-4">Seu produto chegará em :</h1>
+
+                  </div>
+
+                     <div class="content">
+    	<div class="counter"></div>
+    	<input id="seconds" type="number" placeholder="Seconds...">
+    	<div class="buttons">
+    		<button class="btn start" id="start" value="1" onclick="check(this)">Olhar Tempo</button>
+    		<button class="btn start" id="continue" value="1" onclick="check(this)">Continue</button>
+    		
+    		<button class="btn start" id="submit" onclick="subm()">Submit</button>
+    	</div>
+               
+                </div>
+				<button id="voltar" class="btn btn-primary btn-user btn-block" type="button">
+                  Voltar Para Mercado
+                </button>
+				<button id="sair" class="btn btn-primary btn-user btn-block" type="button">
+                 
+				 Sair
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+ 
+    <script type="text/javascript" src="js/main.js"></script>
+  <script>
+ var btnNovoFunc2 = document.getElementById("voltar");
+
+        btnNovoFunc2.addEventListener('click', () => {
+            location = 'mercado.html';
+        });
+
+</script>
+  <script>
+ var btnNovoFunc3 = document.getElementById("sair");
+
+        btnNovoFunc3.addEventListener('click', () => {
+            location = 'index.html';
+        });
+
+</script>
+
+</body>
+
+</html>
